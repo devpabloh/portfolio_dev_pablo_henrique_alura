@@ -5,6 +5,7 @@
     flex-direction: row;
     height: 3em;
     padding-left: 2em;
+    margin-bottom: 1em;
 }
 
 .containerNav{
@@ -12,7 +13,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 2em;
     margin-right: 2em;
 }
 

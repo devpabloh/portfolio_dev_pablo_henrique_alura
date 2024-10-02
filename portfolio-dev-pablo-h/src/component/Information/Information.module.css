@@ -5,8 +5,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 1em;
-    margin-top: 1.5em;
+    gap: 2em;
     width: 80%;
 }
 
@@ -24,12 +23,61 @@
     margin-top: .5em;
 }
 
-
 .listaRedesSociais{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
 }
 
 .listaRedesSociais li{
     list-style-type: none;
+}
+
+.listaRedesSociais li a{
+    padding: 0.2em;
+}
+
+.listaRedesSociais li a:hover{
+    background-color: rgba(128, 128, 128, 0.164);
+    border-radius: 10px;
+}
+
+
+@media(min-width:768px) {
+
+    .containerInformation{
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 1em;
+    }
+
+    .imagemPerfil{
+        height: 9.1250em;
+        width: 9.1250em;
+        border: 2px solid rgba(35, 32, 32, 0.397);
+    }
+
+    .listaRedesSociais a{
+        font-size: 1em;
+    }
+}
+
+@media(min-width:1440px) {
+
+    .imagemPerfil{
+        height: 23em;
+        width: 23em;
+        border: 2px solid rgba(35, 32, 32, 0.397);
+    }   
+
+    .Informations h2{
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    .Informations p{
+        font-size: 1.375em;
+    }
+
 }

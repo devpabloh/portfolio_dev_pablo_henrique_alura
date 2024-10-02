@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from '../component/Header/Header'
-import Information from '../component/Information/Information'
 import styles from "./About.module.css"
+
+/* Componentes */
+import Header from '../component/Header/Header'
+import MyPerson from '../component/MyPerson/MyPerson'
 
 const About = () => {
   return (
     <>
       <Header/>
-      <main className={styles.aboutContainer}>
-        <Information/>
+      <main className={styles.containerMyPerson}>
+        <MyPerson/>
       </main>
       
     </>

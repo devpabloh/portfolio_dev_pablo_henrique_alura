@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./Information.module.css"
+import setaIcon from "../../assets/seta.svg"
 
 const Information = () => {
   return (
@@ -10,12 +11,16 @@ const Information = () => {
                 <h1>Olá, meu nome é Pablo Henrique e sou desenvolvedor de páginas web.</h1>
                 <p>Eu estou fazendo o tecnologo de Analise e Desenvolvimento de sistemas, atualmente estou participando do projeto Oracle ONE na Alura.</p>
             </div>
-            <div >
+            <div className={styles.containerListaRedesSociais}>
                 <ul className={styles.listaRedesSociais}>
-                    <li><a href="https://github.com/devpabloh">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/pablo-henrique-245709207/">Linkedin</a></li>
-                    <li><a href="https://www.instagram.com/devpabloh/">Instagram</a></li>
-                    <li><a href="">Currículo</a></li>
+
+                    <li><a href="https://github.com/devpabloh"target='_blank' rel="noopener noreferrer">GitHub <img src={setaIcon} alt="seta ilustrativa para o github" /></a></li>
+
+                    <li><a href="https://www.linkedin.com/in/pablo-henrique-245709207/" target='_blank' rel="noopener noreferrer">Linkedin <img src={setaIcon} alt="seta ilustrativa para o linkedin" /></a></li>
+
+                    <li><a href="https://www.instagram.com/devpabloh/" target='_blank' rel="noopener noreferrer" >Instagram<img src={setaIcon} alt="seta ilustrativa para o Instagram" /></a></li>
+                    
+                    <li><a href="" target='_blank' rel="noopener noreferrer" >Currículo <img src={setaIcon} alt="seta ilustrativa para o curriculo" target='_blank' rel="noopener noreferrer" /></a></li>
                 </ul>
             </div>
         </div>
