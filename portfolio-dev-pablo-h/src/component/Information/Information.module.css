@@ -1,0 +1,35 @@
+
+
+.containerInformation{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+    width: 80%;
+}
+
+.imagemPerfil{
+    height: 6.125em;
+    width: 6.125em;
+    border-radius: 50%;
+}
+
+.Informations div{
+    margin-top: .5em;
+}
+
+.Informations p{
+    margin-top: .5em;
+}
+
+
+.listaRedesSociais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listaRedesSociais li{
+    list-style-type: none;
+}

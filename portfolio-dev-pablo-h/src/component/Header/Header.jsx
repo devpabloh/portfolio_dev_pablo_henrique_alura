@@ -4,21 +4,31 @@ import { useState, useEffect } from 'react';
 import styles from "./Header.module.css"
 
 const Header = () => {
-    const  [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(false);
+    const [fontSize, setFontSize] = useState('16px'); // Tamanho da fonte padrão
 
-    useEffect(()=>{
-        const handleReSize = () => {
-            setIsMobile(window.innerWidth < 768); // Define se é mobile baseado na largura da tela
+    const handleResize = () => {
+        if (window.innerWidth < 768) { // Ajuste o valor conforme necessário
+            setIsMobile(true);
+            setFontSize('13px'); // Tamanho da fonte para mobile
+        } else {
+            setIsMobile(false);
+            setFontSize('16px'); // Tamanho da fonte para desktop
+            }
         };
 
-      handleReSize();
-      window.addEventListener('resize', handleReSize) // Adiciona um listener para monitorar redimensionamento da tela
-      return ()=> window.removeEventListener('resize', handleReSize); // Remove o listener quando o componente for desmontado
-    })
+    useEffect(() => {
+        handleResize(); // Verifica o tamanho da tela na montagem do componente
+        window.addEventListener('resize', handleResize); // Adiciona o listener
+
+    return () => {
+        window.removeEventListener('resize', handleResize); // Remove o listener ao desmontar
+    };
+  }, []);
 
   return (
     <>
-    <nav className={styles.containerheader}>
+    <nav className={styles.containerheader} style={{ fontSize }}>
             <Link to="/">&lt;Dev. Pablo H./&gt;</Link>
         <ul className={styles.containerNav}>
             {!isMobile && (

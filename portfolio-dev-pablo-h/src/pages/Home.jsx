@@ -4,8 +4,8 @@ import Header from '../component/Header/Header'
 const Home = () => {
   return (
     <>
-    
     <Header/>
+    
     
     </>
   )
