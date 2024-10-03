@@ -1,0 +1,69 @@
+.containerFormacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardFaculdade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: #ffff;
+    border-radius: 5px;
+    height: 220px;
+    width: 296px;
+}
+
+.logo{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 84px;
+    height: 58px;
+}
+
+.cardFaculdadeInformation{
+    text-align: start;
+    margin: 0 0 1em 1em;
+}
+
+@media (min-width: 768px){
+    .containerFormacao{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .cardFaculdade{
+        width: 224px;
+        height: 300px;
+    }
+
+    .cardFaculdadeInformation{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 1em;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .containerFormacao{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+}
