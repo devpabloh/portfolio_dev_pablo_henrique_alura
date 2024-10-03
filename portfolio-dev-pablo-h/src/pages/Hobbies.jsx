@@ -1,11 +1,19 @@
 import React from 'react'
+import styles from "./Hobbies.module.css"
+
+/* Componentes */
 import Header from '../component/Header/Header'
+import CardsHobbies from "../component/CardsHobbies/CardsHobbies"
 
 const Hobbies = () => {
   return (
     <>
       <Header/>
-      <h1>Hobbies</h1>
+      <main className={styles.containerHobbies}>
+        <CardsHobbies/>
+      </main>
+      
+      
     </>
   )
 }

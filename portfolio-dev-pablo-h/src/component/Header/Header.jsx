@@ -8,7 +8,7 @@ const Header = () => {
     const [fontSize, setFontSize] = useState('16px'); // Tamanho da fonte padrão
 
     const handleResize = () => {
-        if (window.innerWidth < 768) { // Ajuste o valor conforme necessário
+        if (window.innerWidth <= 768) { // Ajuste o valor conforme necessário
             setIsMobile(true);
             setFontSize('13px'); // Tamanho da fonte para mobile
         } else {
@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <>
+    <header>
     <nav className={styles.containerheader} style={{ fontSize }}>
             <Link to="/">&lt;Dev. Pablo H./&gt;</Link>
         <ul className={styles.containerNav}>
@@ -64,7 +64,7 @@ const Header = () => {
     </nav>
 
     
-    </>
+    </header>
   )
 }
 

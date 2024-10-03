@@ -7,7 +7,7 @@ import { faHtml5, faCss3Alt, faBootstrap, faJs,faReact, faAngular } from '@forta
 
 const Cards = () => {
   return (
-    <div className={styles.containerCads}>
+    <div className={styles.containerCards}>
         <div className={styles.card}>
         <FontAwesomeIcon icon={faHtml5} className={styles.icon} />
             <p>HTML 5</p>

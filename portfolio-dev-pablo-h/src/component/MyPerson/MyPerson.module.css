@@ -4,6 +4,38 @@
     margin-bottom: 3em;
 }
 
+.containerMyPerson p{
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 0.97em;
+}
+
+
 .containerMyPerson p, h1{
     margin-bottom: 1em;
+}
+
+/* @media (min-width: 768px ){
+    .containerMyPerson p{
+        font-size: 0.875em;
+        font-weight: 400;
+    }
+
+} */
+
+@media (min-width: 1440px){
+
+    .containerMyPerson{
+        padding: 4em;
+    }
+
+    .containerMyPerson h1{
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .containerMyPerson p{
+        font-size: 1em;
+        font-weight: 400;
+    }
 }

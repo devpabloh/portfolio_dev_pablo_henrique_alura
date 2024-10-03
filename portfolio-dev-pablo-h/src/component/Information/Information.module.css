@@ -5,8 +5,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 2em;
-    width: 80%;
+    margin: 0 1em;
 }
 
 .imagemPerfil{
@@ -19,15 +18,19 @@
     margin-top: .5em;
 }
 
+.Informations h1{
+    font-size: 22px;
+}
+
 .Informations p{
     margin-top: .5em;
+    font-size: 14px;
 }
 
 .listaRedesSociais{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 2em;
+    justify-content: space-between;
 }
 
 .listaRedesSociais li{
@@ -35,7 +38,7 @@
 }
 
 .listaRedesSociais li a{
-    padding: 0.2em;
+    font-size: 14px;
 }
 
 .listaRedesSociais li a:hover{
@@ -43,12 +46,16 @@
     border-radius: 10px;
 }
 
+.listaRedesSociais li a img{
+    width: 0.625em;
+    height: 0.625em;
+}
+
 
 @media(min-width:768px) {
 
     .containerInformation{
         flex-direction: row-reverse;
-        width: 100%;
         margin: 0 1em;
     }
 
@@ -58,8 +65,20 @@
         border: 2px solid rgba(35, 32, 32, 0.397);
     }
 
+    .listaRedesSociais{
+        justify-content: flex-start;
+        gap: 2em;
+    
+    }
+
     .listaRedesSociais a{
         font-size: 1em;
+        font-weight: 500;
+    }
+
+    .listaRedesSociais li a img{
+        width: 1em;
+        height: 1em;
     }
 }
 
@@ -71,13 +90,19 @@
         border: 2px solid rgba(35, 32, 32, 0.397);
     }   
 
-    .Informations h2{
-        font-size: 52px;
+    .Informations h1{
+        font-size: 3.25em;
         font-weight: 700;
     }
 
     .Informations p{
         font-size: 1.375em;
+        font-weight: 400;
+    }
+
+    .listaRedesSociais li a{
+        font-size: 1em;
+        font-weight: 500;
     }
 
 }

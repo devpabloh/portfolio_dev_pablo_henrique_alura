@@ -1,4 +1,4 @@
-.containerCards{
+.containerCardsHobbies{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+    text-align: center;
 }
 
 
@@ -29,7 +30,7 @@
 }
 
 @media (min-width:768px){
-    .containerCards{
+    .containerCardsHobbies{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;
@@ -38,10 +39,14 @@
 }
 
 @media (min-width: 1440px) {
-    .containerCards{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1em;
-        padding: 1em;
+    .containerCardsHobbies{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 0;
+        padding: 0;
     }
+
 }
