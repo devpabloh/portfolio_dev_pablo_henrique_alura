@@ -17,7 +17,7 @@ import projetoSpiderMan from "../../assets/projeto-spider-man.png"
 const CardsProjects = () => {
   return (
     <div className={styles.container}>
-        <h1>Experiência Profissional</h1>
+        <h1>Projetos</h1>
 
         <div className={styles.containerCard}>
                 <img src={receitas} alt="" />
@@ -165,28 +165,6 @@ const CardsProjects = () => {
                     <ul>
                         <li><a href="https://github.com/devpabloh/Projeto_lista_de_contatos" target='_blank' rel="noreferrer">Repositório</a></li>
                         <li><a href="https://devpabloh.github.io/Projeto_lista_de_contatos/" target='_blank' rel="noreferrer">Ver Demonstração</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div className={styles.containerCard}>
-                <img src={projetoReceitas} alt="" />
-            <div className={styles.containerCardInformations}>
-                <div className={styles.containerProjectInformation}>
-                    <h2>Receitas</h2>
-                    <p>Informações complementares:</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Responsivo</li>
-                    </ul>
-                </div>
-                <nav className={styles.containerNav}>
-                    <ul>
-                        <li><a href="https://github.com/devpabloh/projeto_pagina_de_receita" target='_blank' rel="noreferrer">Repositório</a></li>
-                        <li><a href="https://devpabloh.github.io/projeto_pagina_de_receita/
-                        " target='_blank' rel="noreferrer">Ver Demonstração</a></li>
                     </ul>
                 </nav>
             </div>
