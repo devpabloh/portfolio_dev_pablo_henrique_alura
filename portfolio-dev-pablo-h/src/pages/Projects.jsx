@@ -1,11 +1,19 @@
 import React from 'react'
+
+/* Componentes */
 import Header from '../component/Header/Header'
+import CardsProjects from '../component/CardsProjects/CardsProjects'
+
+/* CSS */
+import styles from "./Projects.module.css"
 
 const Projects = () => {
   return (
     <>
       <Header/>
-      <h1>Projetos</h1>
+      <main className={styles.containerMain}>
+        <CardsProjects />
+      </main>
     </>
   )
 }

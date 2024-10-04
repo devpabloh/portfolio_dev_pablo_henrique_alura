@@ -6,6 +6,7 @@
     height: 3em;
     padding-left: 2em;
     margin-bottom: 1em;
+    
 }
 
 .containerNav{
@@ -14,6 +15,7 @@
     align-items: center;
     flex-direction: row;
     margin-right: 2em;
+    
 }
 
 .containerNav li{
@@ -22,6 +24,7 @@
 
 .containerNav li a{
     padding: .5em;
+    color: #00000097;
     
 }
 

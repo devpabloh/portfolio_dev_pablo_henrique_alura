@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerCard{
+    width: 296px;
+    margin-bottom: 2em;
+    text-align: start;
+}
+
+.containerCard img{
+    width: 100%;
+}
+
+.containerProjectInformation{
+    margin-bottom: 1.5em; 
+}
+
+.containerProjectInformation ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1em;
+}
+
+.containerNav{
+    margin-top: 1em;
+}
+
+
+
+.containerNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8em;
+    list-style-type: none;
+    text-wrap: nowrap;
+   
+}
+
+.containerNav ul li a{
+    padding: 1em;
+    border-radius: 5px;
+    width: 96px;
+    height: 40px;
+    color: #ffff;
+    background-color: #000000;
+}
+
+.containerNav ul li a:hover{
+    -webkit-box-shadow: 5px 5px 10px 3px rgb(108, 107, 107); 
+    box-shadow: 5px 5px 10px 3px rgb(108, 107, 107);
+    
+}
