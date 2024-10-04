@@ -1,11 +1,19 @@
 import React from 'react'
+
+/* Componentes */
 import Header from '../component/Header/Header'
+import Form from "../component/Form/Form.jsx"
+
+/* CSS */
+import styles from "./Contato.module.css"
 
 const Contato = () => {
   return (
     <>
       <Header/>
-      <h1>Contato</h1>
+      <main className={styles.containerMain}>
+        <Form/>
+      </main>
     </>
   )
 }
