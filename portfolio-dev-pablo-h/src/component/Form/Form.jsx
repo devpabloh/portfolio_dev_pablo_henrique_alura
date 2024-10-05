@@ -65,7 +65,7 @@ const Form = () => {
             <label htmlFor="message">Mensagem:</label>
             <textarea name="message" id="message" value={formData.message} onChange={handleChange} required></textarea>
 
-            <button type='submit'>Enviar</button>
+            <button type='submit' className={styles.buttons}>Enviar</button>
 
             <p>{resultMessage}</p>
         </form>

@@ -2,4 +2,16 @@
 .containerForm{
     display: flex;
     flex-direction: column;
+    gap: .4em;
+}
+
+.buttons{
+    background-color: #000;
+    color: #fff;
+}
+
+.buttons:hover{
+    -webkit-box-shadow: 5px 5px 10px 3px rgb(108, 107, 107); 
+    box-shadow: 5px 5px 10px 3px rgb(108, 107, 107);
+    cursor: pointer;
 }
